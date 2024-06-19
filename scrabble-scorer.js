@@ -76,7 +76,7 @@ function initialPrompt() {
   let playersChoice = input.question(`Choose your scoring option: 
    0 - ${simpleScorer.name}: ${simpleScorer.description}
    1 - ${vowelBonusScorer.name}: ${vowelBonusScorer.description}
-   2 - ${scrabble.name}: ${scrabble.description}
+   2 - ${scrabbleScorer.name}: ${scrabbleScorer.description}
    Enter 0, 1, or 2: `);
  
    
