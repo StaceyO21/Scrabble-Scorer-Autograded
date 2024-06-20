@@ -93,8 +93,7 @@ let vowelBonusScorerOne = {
    name: 'Bonus Vowels',
    description: 'Vowels are 3 pts',
    scorerFunction: vowelBonusScorer
-};
-
+}
 let scrabbleScorerOne = {
    name: 'Scrabble',
    description: 'Uses scrabble point system',
@@ -107,13 +106,13 @@ function scorerPrompt(_playerInput, playersChoice) {
    let splitPlayerInput = _playerInput.toUpperCase().split('');
 console.log("player input: " + _playerInput + "  player's choice: " + playersChoice);
       if (playersChoice == 0) {
-         console.log(`Score for '${_playerInput}': ${simpleScorer.scoringFunction(splitPlayerInput)}`);
+         console.log(`Score for '${_playerInput}': ${simpleScorerOne.scorerFunction(splitPlayerInput)}`);
       }
       if (playersChoice == 1) {
-         console.log(`Score for '${_playerInput}': ${vowelBonusScorer.scoringFunction(splitPlayerInput)}`);
+         console.log(`Score for '${_playerInput}': ${vowelBonusScorerOne.scorerFunction(splitPlayerInput)}`);
       }
       if (playersChoice == 2) {
-         console.log(`Score for '${_playerInput}': ${scrabbleScorer.scoringFunction(splitPlayerInput)}`);
+         console.log(`Score for '${_playerInput}': ${scrabbleScorerOne.scorerFunction(splitPlayerInput)}`);
       }
 }
 
